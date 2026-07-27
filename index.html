@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitácora 503, un blog grupal sobre vida universitaria, hábitos de estudio y rincones de El Salvador.">
+    <meta name="author" content="Equipo de Lenguajes Interpretados en el Cliente">
+    <title>Bitácora 503 | Historias entre clases</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+    <!-- Cabecera y navegación principal -->
+    <header id="inicio">
+        <div class="franja-superior">
+            <div class="container">
+                <p class="mb-0">Revista estudiantil sobre aprendizaje y vida en El Salvador</p>
+            </div>
+        </div>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <div class="container navegacion-contenido">
+                <a class="marca" href="#inicio">
+                    <span class="marca-numero">503</span>
+                    <span>Bitácora</span>
+                </a>
+
+                <ul class="lista-navegacion">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#historias">Historias</a></li>
+                    <li><a href="#mi-semana">Semana</a></li>
+                    <li><a href="#sobre-proyecto">Proyecto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Artículo destacado -->
+    <section class="destacado">
+        <div class="container">
+            <div class="row g-0 destacado-contenido">
+                <div class="col-12 col-lg-7">
+                    <img class="img-fluid destacado-imagen" src="img/estudio1.jpg" alt="Estudiante escribiendo de madrugada frente a su escritorio" width="1199" height="669">
+                </div>
+
+                <article class="col-12 col-lg-5 destacado-texto">
+                    <p class="etiqueta">Vida universitaria</p>
+                    <p class="fecha">25 de julio de 2026 · 6 min de lectura</p>
+                    <h1>Aprender sin vivir corriendo</h1>
+                    <p class="resumen">Una forma más realista de organizar las clases: menos listas imposibles, más prioridades y pausas dentro del día.</p>
+                    <a class="btn boton-principal" href="#historias">Explorar artículos</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido" class="container contenido-principal">
+        <div class="row gy-5 gx-lg-5">
+            <!-- Entradas del blog -->
+            <section id="historias" class="col-12 col-lg-8">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">Notas recientes</p>
+                    <h2>Historias de la semana</h2>
+                    <p>Apuntes breves sobre aprendizaje, ciudad y vida universitaria.</p>
+                </div>
+
+                <div class="row g-4">
+                    <article class="col-12 col-md-6">
+                        <div class="card h-100 entrada">
+                            <img class="card-img-top entrada-imagen" src="img/computadora_estudio1.jpg" alt="Escritorio de estudio con computadora, monitor y materiales de trabajo" width="736" height="981" loading="lazy">
+                            <div class="card-body">
+                                <p class="entrada-datos">Estudio · 23 julio</p>
+                                <h3 class="card-title">Un ritual de 20 minutos antes de estudiar</h3>
+                                <p class="card-text">Ordenar el escritorio, elegir una meta pequeña y quitar distracciones cambia por completo la primera hora.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-6">
+                        <div class="card h-100 entrada">
+                            <img class="card-img-top entrada-imagen" src="img/persona_caminando.jpg" alt="Estudiante con mochila caminando por un campus universitario" width="735" height="490" loading="lazy">
+                            <div class="card-body">
+                                <p class="entrada-datos">Ciudad · 20 julio</p>
+                                <h3 class="card-title">La ciudad también se aprende caminando</h3>
+                                <p class="card-text">Una ruta distinta hacia la universidad demuestra que observar con calma también alimenta las ideas.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="card entrada entrada-horizontal">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-5">
+                                    <img class="img-fluid entrada-imagen-horizontal" src="img/articulo-volcan.jpg" alt="Persona observando un paisaje volcánico desde un sendero" width="1200" height="800" loading="lazy">
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <div class="card-body">
+                                        <p class="entrada-datos">Pausa · 18 julio</p>
+                                        <h3 class="card-title">Un sábado lejos de la pantalla</h3>
+                                        <p class="card-text">Salir a caminar no resuelve los pendientes, pero ayuda a recuperar la atención necesaria para retomarlos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Tabla responsiva solicitada -->
+                <section id="mi-semana" class="seccion-semana">
+                    <div class="titulo-seccion">
+                        <h2>Organización de la semana</h2>
+                        <p>Una tabla sencilla para visualizar estudio, trabajo en equipo y pausas.</p>
+                    </div>
+
+                    <div class="table-responsive tabla-contenedor">
+                        <table class="table table-hover align-middle mb-0">
+                            <caption>Ejemplo de distribución de actividades durante una semana de clases.</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Día</th>
+                                    <th scope="col">Prioridad</th>
+                                    <th scope="col">Tiempo</th>
+                                    <th scope="col">Pausa elegida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Lunes</th>
+                                    <td>Lecturas de clase</td>
+                                    <td>2 horas</td>
+                                    <td>Caminata corta</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Martes</th>
+                                    <td>Práctica de HTML</td>
+                                    <td>2.5 horas</td>
+                                    <td>Música</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Miércoles</th>
+                                    <td>Trabajo en equipo</td>
+                                    <td>2 horas</td>
+                                    <td>Café con amigos</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Jueves</th>
+                                    <td>Estilos con CSS</td>
+                                    <td>3 horas</td>
+                                    <td>Lectura libre</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Viernes</th>
+                                    <td>Revisión y entrega</td>
+                                    <td>1.5 horas</td>
+                                    <td>Tarde libre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Canvas decorativo sin JavaScript -->
+                <section class="seccion-lienzo" aria-labelledby="tituloLienzo">
+                    <div class="titulo-seccion">
+                        <h2 id="tituloLienzo">Lienzo de la semana</h2>
+                    </div>
+
+                    <figure class="lienzo">
+                        <canvas width="900" height="280" aria-label="Lienzo decorativo con una cuadrícula inspirada en un cuaderno">
+                            Tu navegador no puede mostrar el lienzo.
+                        </canvas>
+                        <div class="lienzo-mensaje">
+                            <p class="lienzo-dia">IDEA DE LA SEMANA</p>
+                            <blockquote>“Avanzar también significa reconocer cuál es el siguiente paso.”</blockquote>
+                        </div>
+                        <figcaption>Una idea para organizar el trabajo del equipo.</figcaption>
+                    </figure>
+                </section>
+            </section>
+
+            <!-- Barra lateral -->
+            <aside class="col-12 col-lg-4">
+                <section id="sobre-proyecto" class="panel-lateral perfil">
+                    <p class="etiqueta">Proyecto grupal</p>
+                    <h2>Sobre Bitácora 503</h2>
+                    <p>Este blog reúne contenidos creados en equipo sobre estudio, organización y experiencias universitarias en El Salvador.</p>
+                    <p class="etiqueta">Temas del blog</p>
+                    <div class="etiquetas">
+                        <a href="#historias">Universidad</a>
+                        <a href="#historias">Estudio</a>
+                        <a href="#historias">Ciudad</a>
+                        <a href="#historias">Pausas</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-12 col-md-7">
+                    <p class="pie-marca mb-1">Bitácora 503</p>
+                    <p class="mb-0"><small>Proyecto académico de Lenguajes Interpretados en el Cliente · 2026</small></p>
+                </div>
+                <div class="col-12 col-md-5 text-md-end">
+                    <a href="#inicio">Volver arriba</a>
+                    <a class="ms-3" href="maquetado.html">Ver maquetado</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Propuesta de maquetado responsivo para el blog grupal Bitácora 503.">
+    <meta name="author" content="Equipo de Lenguajes Interpretados en el Cliente">
+    <title>Propuesta de maquetado | Bitácora 503</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maquetado.css">
+</head>
+<body>
+    <header class="cabecera-documento">
+        <div class="container">
+            <p class="codigo-documento">DOCUMENTO 01 · PROPUESTA RESPONSIVA</p>
+            <h1>Maquetado de Bitácora 503</h1>
+            <p class="introduccion">Modelo de distribución para teléfono, tableta y computadora. La propuesta utiliza el sistema de 12 columnas y los breakpoints de Bootstrap 5.</p>
+            <a class="btn boton-regreso" href="index.html">Ver el blog terminado</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container seccion-documento">
+            <div class="row g-4">
+                <article class="col-12 col-lg-7">
+                    <h2>Tipo de diseño responsivo</h2>
+                    <p>El sitio aplica un diseño <strong>mobile first</strong>: comienza con una sola columna para pantallas pequeñas y agrega columnas cuando existe más espacio. El contenido es fluido porque imágenes, tablas y lienzo ocupan el ancho disponible sin provocar desplazamiento horizontal.</p>
+                    <p>La jerarquía no cambia entre dispositivos. El artículo destacado aparece primero, luego las historias, la tabla y el lienzo. La barra lateral baja al final en teléfono y tableta, mientras que en computadora aparece junto al contenido principal.</p>
+                </article>
+
+                <aside class="col-12 col-lg-5">
+                    <div class="resumen-tecnico">
+                        <h2>Elementos Bootstrap</h2>
+                        <ul>
+                            <li><code>.container</code>, <code>.row</code> y columnas.</li>
+                            <li><code>.col-12</code>, <code>.col-md-6</code> y <code>.col-lg-*</code>.</li>
+                            <li>Navegación estática con enlaces internos.</li>
+                            <li>Tarjetas, imágenes y tabla responsiva.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="zona-modelos">
+            <div class="container seccion-documento">
+                <div class="titulo-seccion">
+                    <p>MODELOS POR DISPOSITIVO</p>
+                    <h2>La misma historia, tres distribuciones</h2>
+                </div>
+
+                <div class="row gy-5 gx-lg-5 align-items-end justify-content-center">
+                    <!-- Modelo móvil -->
+                    <article class="col-12 col-sm-8 col-lg-3">
+                        <div class="modelo modelo-movil">
+                            <div class="modelo-barra">
+                                <span></span>
+                                <strong>Teléfono</strong>
+                                <small>&lt; 768 px</small>
+                            </div>
+                            <div class="pantalla">
+                                <div class="bloque cabecera-mini">Marca + enlaces</div>
+                                <div class="bloque imagen-mini">Imagen destacada</div>
+                                <div class="bloque texto-mini">Artículo destacado</div>
+                                <div class="bloque tarjeta-mini">Historia 1</div>
+                                <div class="bloque tarjeta-mini">Historia 2</div>
+                                <div class="bloque tabla-mini">Tabla desplazable</div>
+                                <div class="bloque lateral-mini">Barra lateral</div>
+                                <div class="bloque pie-mini">Pie</div>
+                            </div>
+                        </div>
+                        <h3 class="nombre-modelo">Una columna</h3>
+                        <p>Enlaces en dos filas, imagen sobre el texto, historias apiladas y barra lateral al final.</p>
+                    </article>
+
+                    <!-- Modelo tableta -->
+                    <article class="col-12 col-md-10 col-lg-4">
+                        <div class="modelo modelo-tableta">
+                            <div class="modelo-barra">
+                                <span></span>
+                                <strong>Tableta</strong>
+                                <small>≥ 768 px</small>
+                            </div>
+                            <div class="pantalla">
+                                <div class="bloque cabecera-mini">Marca + enlaces</div>
+                                <div class="bloque imagen-mini">Imagen destacada</div>
+                                <div class="bloque texto-mini">Artículo destacado</div>
+                                <div class="row g-2 fila-mini">
+                                    <div class="col-6">
+                                        <div class="bloque tarjeta-mini">Historia 1</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bloque tarjeta-mini">Historia 2</div>
+                                    </div>
+                                </div>
+                                <div class="bloque tabla-mini">Tabla completa</div>
+                                <div class="bloque lateral-mini">Barra lateral debajo</div>
+                                <div class="bloque pie-mini">Pie en dos columnas</div>
+                            </div>
+                        </div>
+                        <h3 class="nombre-modelo">Dos tarjetas</h3>
+                        <p>Las entradas cortas forman dos columnas. El contenido y la barra lateral todavía se apilan.</p>
+                    </article>
+
+                    <!-- Modelo computadora -->
+                    <article class="col-12 col-lg-5">
+                        <div class="modelo modelo-escritorio">
+                            <div class="modelo-barra">
+                                <span></span>
+                                <strong>Computadora</strong>
+                                <small>≥ 992 px</small>
+                            </div>
+                            <div class="pantalla">
+                                <div class="bloque cabecera-mini">Marca + navegación visible</div>
+                                <div class="row g-2 fila-mini">
+                                    <div class="col-7">
+                                        <div class="bloque imagen-mini alto-destacado">Imagen destacada</div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="bloque texto-mini alto-destacado">Artículo destacado</div>
+                                    </div>
+                                </div>
+                                <div class="row g-2 fila-mini">
+                                    <div class="col-8">
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <div class="bloque tarjeta-mini">Historia 1</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="bloque tarjeta-mini">Historia 2</div>
+                                            </div>
+                                        </div>
+                                        <div class="bloque tabla-mini mt-2">Tabla + lienzo</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="bloque lateral-mini alto-lateral">Proyecto + artículos + tags</div>
+                                    </div>
+                                </div>
+                                <div class="bloque pie-mini">Pie</div>
+                            </div>
+                        </div>
+                        <h3 class="nombre-modelo">Contenido 8 / barra 4</h3>
+                        <p>El hero se divide 7/5 y el cuerpo 8/4. La navegación aparece completa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container seccion-documento">
+            <div class="titulo-seccion">
+                <p>DECISIONES DE BREAKPOINT</p>
+                <h2>Comportamiento esperado</h2>
+            </div>
+
+            <div class="table-responsive tabla-breakpoints">
+                <table class="table table-bordered align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">Breakpoint</th>
+                            <th scope="col">Ancho</th>
+                            <th scope="col">Cambio principal en Bitácora 503</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">XS</th>
+                            <td>Menos de 576 px</td>
+                            <td>Todo se presenta en una columna, los enlaces se reparten y la tabla permite desplazamiento horizontal.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SM</th>
+                            <td>Desde 576 px</td>
+                            <td>Aumenta el espacio interior; la estructura principal continúa apilada.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MD</th>
+                            <td>Desde 768 px</td>
+                            <td>Las dos historias cortas ocupan dos columnas y el pie se divide.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">LG</th>
+                            <td>Desde 992 px</td>
+                            <td>El hero cambia a 7/5 y el cuerpo se divide en contenido 8/4 con barra lateral.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">XL</th>
+                            <td>Desde 1200 px</td>
+                            <td>El contenedor gana ancho y aire, sin alterar el orden del contenido.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">XXL</th>
+                            <td>Desde 1400 px</td>
+                            <td>El ancho máximo de Bootstrap mantiene líneas de lectura cómodas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-documento">
+        <div class="container">
+            <p class="mb-1"><strong>Bitácora 503 · Propuesta de maquetado</strong></p>
+            <p class="mb-0"><small>El modelo coincide con las clases aplicadas en <a href="index.html">index.html</a>.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
